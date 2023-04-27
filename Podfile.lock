@@ -1,0 +1,20 @@
+PODS:
+  - AWSCore (2.30.4)
+  - AWSPolly (2.30.4):
+    - AWSCore (= 2.30.4)
+
+DEPENDENCIES:
+  - AWSPolly
+
+SPEC REPOS:
+  trunk:
+    - AWSCore
+    - AWSPolly
+
+SPEC CHECKSUMS:
+  AWSCore: 19b8233fe2d0ed3ccf5cff833a615814282cdc90
+  AWSPolly: 740a9ca000c360728685ff176459ba8aafc66470
+
+PODFILE CHECKSUM: a0402aafe5698b051c6e293829bf57e076572fa3
+
+COCOAPODS: 1.12.0

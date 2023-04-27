@@ -1,0 +1,6 @@
+framework module Pods_SpeakEasy_SpeakEasyUITests {
+  umbrella header "Pods-SpeakEasy-SpeakEasyUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

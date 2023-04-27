@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-SpeakEasy/Pods-SpeakEasy-frameworks.sh
+${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework
+${BUILT_PRODUCTS_DIR}/AWSPolly/AWSPolly.framework

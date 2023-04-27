@@ -1,0 +1,826 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D63564F29F96B6B00DFDD65 /* OpenAIAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D63564E29F96B6B00DFDD65 /* OpenAIAPI.swift */; };
+		1D63565129F973E100DFDD65 /* CredentialManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D63565029F973E100DFDD65 /* CredentialManager.swift */; };
+		1D63565529F976CE00DFDD65 /* credential.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D63565429F976CE00DFDD65 /* credential.plist */; };
+		1DB34BF429B510A8006B6CC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB34BF329B510A8006B6CC5 /* AppDelegate.swift */; };
+		1DB34BF629B510F9006B6CC5 /* TextToSpeechViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB34BF529B510F9006B6CC5 /* TextToSpeechViewModel.swift */; };
+		1DB34BF829B532FA006B6CC5 /* TalkHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB34BF729B532FA006B6CC5 /* TalkHistory.swift */; };
+		1DB35DDB29B4C9C000ADEB75 /* SpeakEasyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB35DDA29B4C9C000ADEB75 /* SpeakEasyApp.swift */; };
+		1DB35DDD29B4C9C000ADEB75 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB35DDC29B4C9C000ADEB75 /* ContentView.swift */; };
+		1DB35DDF29B4C9C200ADEB75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DB35DDE29B4C9C200ADEB75 /* Assets.xcassets */; };
+		1DB35DE229B4C9C200ADEB75 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DB35DE129B4C9C200ADEB75 /* Preview Assets.xcassets */; };
+		1DB35DEC29B4C9C200ADEB75 /* SpeakEasyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB35DEB29B4C9C200ADEB75 /* SpeakEasyTests.swift */; };
+		1DB35DF629B4C9C200ADEB75 /* SpeakEasyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB35DF529B4C9C200ADEB75 /* SpeakEasyUITests.swift */; };
+		1DB35DF829B4C9C200ADEB75 /* SpeakEasyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB35DF729B4C9C200ADEB75 /* SpeakEasyUITestsLaunchTests.swift */; };
+		1DB35E0529B4C9D000ADEB75 /* TextCompletionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB35E0429B4C9D000ADEB75 /* TextCompletionViewModel.swift */; };
+		1DB35E0829B4E5C800ADEB75 /* ChatCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB35E0729B4E5C800ADEB75 /* ChatCompletion.swift */; };
+		1DB35E0A29B4E84D00ADEB75 /* SpeechRecognizerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB35E0929B4E84D00ADEB75 /* SpeechRecognizerViewModel.swift */; };
+		33E55D75AADE107D9386AE35 /* Pods_SpeakEasy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFDBD978FF0E0F40008D714 /* Pods_SpeakEasy.framework */; };
+		4FEFC4879B0608D4B06CCE4E /* Pods_SpeakEasy_SpeakEasyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E37A95A73B5B03D211F131 /* Pods_SpeakEasy_SpeakEasyUITests.framework */; };
+		A7F9E3294A70A1D52C1E8294 /* Pods_SpeakEasyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6042F59AE85B42E65DF14A2 /* Pods_SpeakEasyTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1DB35DE829B4C9C200ADEB75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DB35DCF29B4C9C000ADEB75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DB35DD629B4C9C000ADEB75;
+			remoteInfo = SpeakEasy;
+		};
+		1DB35DF229B4C9C200ADEB75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DB35DCF29B4C9C000ADEB75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DB35DD629B4C9C000ADEB75;
+			remoteInfo = SpeakEasy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06E37A95A73B5B03D211F131 /* Pods_SpeakEasy_SpeakEasyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeakEasy_SpeakEasyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16214EE7D68D87FD14EB20AF /* Pods-SpeakEasyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeakEasyTests.release.xcconfig"; path = "Target Support Files/Pods-SpeakEasyTests/Pods-SpeakEasyTests.release.xcconfig"; sourceTree = "<group>"; };
+		1A9C7BD5CEAF7414C10F59BA /* Pods-SpeakEasy-SpeakEasyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeakEasy-SpeakEasyUITests.debug.xcconfig"; path = "Target Support Files/Pods-SpeakEasy-SpeakEasyUITests/Pods-SpeakEasy-SpeakEasyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1D63564E29F96B6B00DFDD65 /* OpenAIAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIAPI.swift; sourceTree = "<group>"; };
+		1D63565029F973E100DFDD65 /* CredentialManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialManager.swift; sourceTree = "<group>"; };
+		1D63565429F976CE00DFDD65 /* credential.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = credential.plist; sourceTree = "<group>"; };
+		1DB34BF329B510A8006B6CC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1DB34BF529B510F9006B6CC5 /* TextToSpeechViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeechViewModel.swift; sourceTree = "<group>"; };
+		1DB34BF729B532FA006B6CC5 /* TalkHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkHistory.swift; sourceTree = "<group>"; };
+		1DB35DD729B4C9C000ADEB75 /* SpeakEasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeakEasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DB35DDA29B4C9C000ADEB75 /* SpeakEasyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakEasyApp.swift; sourceTree = "<group>"; };
+		1DB35DDC29B4C9C000ADEB75 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1DB35DDE29B4C9C200ADEB75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1DB35DE129B4C9C200ADEB75 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1DB35DE729B4C9C200ADEB75 /* SpeakEasyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeakEasyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DB35DEB29B4C9C200ADEB75 /* SpeakEasyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakEasyTests.swift; sourceTree = "<group>"; };
+		1DB35DF129B4C9C200ADEB75 /* SpeakEasyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeakEasyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DB35DF529B4C9C200ADEB75 /* SpeakEasyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakEasyUITests.swift; sourceTree = "<group>"; };
+		1DB35DF729B4C9C200ADEB75 /* SpeakEasyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakEasyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1DB35E0429B4C9D000ADEB75 /* TextCompletionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCompletionViewModel.swift; sourceTree = "<group>"; };
+		1DB35E0729B4E5C800ADEB75 /* ChatCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCompletion.swift; sourceTree = "<group>"; };
+		1DB35E0929B4E84D00ADEB75 /* SpeechRecognizerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizerViewModel.swift; sourceTree = "<group>"; };
+		3FF3D7D9DBDC3D390DEAE3B1 /* Pods-SpeakEasy-SpeakEasyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeakEasy-SpeakEasyUITests.release.xcconfig"; path = "Target Support Files/Pods-SpeakEasy-SpeakEasyUITests/Pods-SpeakEasy-SpeakEasyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		51CB370DB33FA54CE9EB8E67 /* Pods-SpeakEasy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeakEasy.release.xcconfig"; path = "Target Support Files/Pods-SpeakEasy/Pods-SpeakEasy.release.xcconfig"; sourceTree = "<group>"; };
+		6BFDBD978FF0E0F40008D714 /* Pods_SpeakEasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeakEasy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB788DD63AFAAF9939FF581C /* Pods-SpeakEasy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeakEasy.debug.xcconfig"; path = "Target Support Files/Pods-SpeakEasy/Pods-SpeakEasy.debug.xcconfig"; sourceTree = "<group>"; };
+		E6042F59AE85B42E65DF14A2 /* Pods_SpeakEasyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeakEasyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC23832A380D24A4BA40EDFC /* Pods-SpeakEasyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeakEasyTests.debug.xcconfig"; path = "Target Support Files/Pods-SpeakEasyTests/Pods-SpeakEasyTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1DB35DD429B4C9C000ADEB75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33E55D75AADE107D9386AE35 /* Pods_SpeakEasy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DB35DE429B4C9C200ADEB75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7F9E3294A70A1D52C1E8294 /* Pods_SpeakEasyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DB35DEE29B4C9C200ADEB75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FEFC4879B0608D4B06CCE4E /* Pods_SpeakEasy_SpeakEasyUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D63565629F97B4A00DFDD65 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1DB35E0429B4C9D000ADEB75 /* TextCompletionViewModel.swift */,
+				1DB35E0929B4E84D00ADEB75 /* SpeechRecognizerViewModel.swift */,
+				1DB34BF529B510F9006B6CC5 /* TextToSpeechViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1D63565729F97B5B00DFDD65 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				1D63564E29F96B6B00DFDD65 /* OpenAIAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		1D63565829F97B6900DFDD65 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1DB35DDC29B4C9C000ADEB75 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1D63565929F97B7700DFDD65 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				1D63565029F973E100DFDD65 /* CredentialManager.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		1DB35DCE29B4C9C000ADEB75 = {
+			isa = PBXGroup;
+			children = (
+				1D63565429F976CE00DFDD65 /* credential.plist */,
+				1DB35DD929B4C9C000ADEB75 /* SpeakEasy */,
+				1DB35DEA29B4C9C200ADEB75 /* SpeakEasyTests */,
+				1DB35DF429B4C9C200ADEB75 /* SpeakEasyUITests */,
+				1DB35DD829B4C9C000ADEB75 /* Products */,
+				A6EB15DCACF7747376965761 /* Pods */,
+				26A3D7EA19AF5E4FDEF4F14A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1DB35DD829B4C9C000ADEB75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DB35DD729B4C9C000ADEB75 /* SpeakEasy.app */,
+				1DB35DE729B4C9C200ADEB75 /* SpeakEasyTests.xctest */,
+				1DB35DF129B4C9C200ADEB75 /* SpeakEasyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1DB35DD929B4C9C000ADEB75 /* SpeakEasy */ = {
+			isa = PBXGroup;
+			children = (
+				1DB34BF329B510A8006B6CC5 /* AppDelegate.swift */,
+				1DB35DDA29B4C9C000ADEB75 /* SpeakEasyApp.swift */,
+				1D63565729F97B5B00DFDD65 /* API */,
+				1D63565829F97B6900DFDD65 /* View */,
+				1D63565629F97B4A00DFDD65 /* ViewModel */,
+				1DB35E0629B4E5B900ADEB75 /* Model */,
+				1D63565929F97B7700DFDD65 /* Util */,
+				1DB35DDE29B4C9C200ADEB75 /* Assets.xcassets */,
+				1DB35DE029B4C9C200ADEB75 /* Preview Content */,
+			);
+			path = SpeakEasy;
+			sourceTree = "<group>";
+		};
+		1DB35DE029B4C9C200ADEB75 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1DB35DE129B4C9C200ADEB75 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1DB35DEA29B4C9C200ADEB75 /* SpeakEasyTests */ = {
+			isa = PBXGroup;
+			children = (
+				1DB35DEB29B4C9C200ADEB75 /* SpeakEasyTests.swift */,
+			);
+			path = SpeakEasyTests;
+			sourceTree = "<group>";
+		};
+		1DB35DF429B4C9C200ADEB75 /* SpeakEasyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1DB35DF529B4C9C200ADEB75 /* SpeakEasyUITests.swift */,
+				1DB35DF729B4C9C200ADEB75 /* SpeakEasyUITestsLaunchTests.swift */,
+			);
+			path = SpeakEasyUITests;
+			sourceTree = "<group>";
+		};
+		1DB35E0629B4E5B900ADEB75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1DB35E0729B4E5C800ADEB75 /* ChatCompletion.swift */,
+				1DB34BF729B532FA006B6CC5 /* TalkHistory.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		26A3D7EA19AF5E4FDEF4F14A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BFDBD978FF0E0F40008D714 /* Pods_SpeakEasy.framework */,
+				06E37A95A73B5B03D211F131 /* Pods_SpeakEasy_SpeakEasyUITests.framework */,
+				E6042F59AE85B42E65DF14A2 /* Pods_SpeakEasyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6EB15DCACF7747376965761 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB788DD63AFAAF9939FF581C /* Pods-SpeakEasy.debug.xcconfig */,
+				51CB370DB33FA54CE9EB8E67 /* Pods-SpeakEasy.release.xcconfig */,
+				1A9C7BD5CEAF7414C10F59BA /* Pods-SpeakEasy-SpeakEasyUITests.debug.xcconfig */,
+				3FF3D7D9DBDC3D390DEAE3B1 /* Pods-SpeakEasy-SpeakEasyUITests.release.xcconfig */,
+				EC23832A380D24A4BA40EDFC /* Pods-SpeakEasyTests.debug.xcconfig */,
+				16214EE7D68D87FD14EB20AF /* Pods-SpeakEasyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1DB35DD629B4C9C000ADEB75 /* SpeakEasy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DB35DFB29B4C9C200ADEB75 /* Build configuration list for PBXNativeTarget "SpeakEasy" */;
+			buildPhases = (
+				4F87F62D9D86D9E5CF2EA266 /* [CP] Check Pods Manifest.lock */,
+				1DB35DD329B4C9C000ADEB75 /* Sources */,
+				1DB35DD429B4C9C000ADEB75 /* Frameworks */,
+				1DB35DD529B4C9C000ADEB75 /* Resources */,
+				5A339FA48DD1472550AF291A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpeakEasy;
+			productName = SpeakEasy;
+			productReference = 1DB35DD729B4C9C000ADEB75 /* SpeakEasy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1DB35DE629B4C9C200ADEB75 /* SpeakEasyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DB35DFE29B4C9C200ADEB75 /* Build configuration list for PBXNativeTarget "SpeakEasyTests" */;
+			buildPhases = (
+				2B6D2468ABB7212939283E92 /* [CP] Check Pods Manifest.lock */,
+				1DB35DE329B4C9C200ADEB75 /* Sources */,
+				1DB35DE429B4C9C200ADEB75 /* Frameworks */,
+				1DB35DE529B4C9C200ADEB75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DB35DE929B4C9C200ADEB75 /* PBXTargetDependency */,
+			);
+			name = SpeakEasyTests;
+			productName = SpeakEasyTests;
+			productReference = 1DB35DE729B4C9C200ADEB75 /* SpeakEasyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1DB35DF029B4C9C200ADEB75 /* SpeakEasyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DB35E0129B4C9C200ADEB75 /* Build configuration list for PBXNativeTarget "SpeakEasyUITests" */;
+			buildPhases = (
+				B64FB7C701AD358859CBDAAA /* [CP] Check Pods Manifest.lock */,
+				1DB35DED29B4C9C200ADEB75 /* Sources */,
+				1DB35DEE29B4C9C200ADEB75 /* Frameworks */,
+				1DB35DEF29B4C9C200ADEB75 /* Resources */,
+				DA1BEA45B5FE651F80E33ED2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DB35DF329B4C9C200ADEB75 /* PBXTargetDependency */,
+			);
+			name = SpeakEasyUITests;
+			productName = SpeakEasyUITests;
+			productReference = 1DB35DF129B4C9C200ADEB75 /* SpeakEasyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1DB35DCF29B4C9C000ADEB75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					1DB35DD629B4C9C000ADEB75 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					1DB35DE629B4C9C200ADEB75 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 1DB35DD629B4C9C000ADEB75;
+					};
+					1DB35DF029B4C9C200ADEB75 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 1DB35DD629B4C9C000ADEB75;
+					};
+				};
+			};
+			buildConfigurationList = 1DB35DD229B4C9C000ADEB75 /* Build configuration list for PBXProject "SpeakEasy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1DB35DCE29B4C9C000ADEB75;
+			productRefGroup = 1DB35DD829B4C9C000ADEB75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1DB35DD629B4C9C000ADEB75 /* SpeakEasy */,
+				1DB35DE629B4C9C200ADEB75 /* SpeakEasyTests */,
+				1DB35DF029B4C9C200ADEB75 /* SpeakEasyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1DB35DD529B4C9C000ADEB75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DB35DE229B4C9C200ADEB75 /* Preview Assets.xcassets in Resources */,
+				1D63565529F976CE00DFDD65 /* credential.plist in Resources */,
+				1DB35DDF29B4C9C200ADEB75 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DB35DE529B4C9C200ADEB75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DB35DEF29B4C9C200ADEB75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B6D2468ABB7212939283E92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpeakEasyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F87F62D9D86D9E5CF2EA266 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpeakEasy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A339FA48DD1472550AF291A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpeakEasy/Pods-SpeakEasy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpeakEasy/Pods-SpeakEasy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpeakEasy/Pods-SpeakEasy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B64FB7C701AD358859CBDAAA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpeakEasy-SpeakEasyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA1BEA45B5FE651F80E33ED2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpeakEasy-SpeakEasyUITests/Pods-SpeakEasy-SpeakEasyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpeakEasy-SpeakEasyUITests/Pods-SpeakEasy-SpeakEasyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpeakEasy-SpeakEasyUITests/Pods-SpeakEasy-SpeakEasyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DB35DD329B4C9C000ADEB75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DB34BF429B510A8006B6CC5 /* AppDelegate.swift in Sources */,
+				1DB35DDD29B4C9C000ADEB75 /* ContentView.swift in Sources */,
+				1DB34BF829B532FA006B6CC5 /* TalkHistory.swift in Sources */,
+				1D63564F29F96B6B00DFDD65 /* OpenAIAPI.swift in Sources */,
+				1DB35E0829B4E5C800ADEB75 /* ChatCompletion.swift in Sources */,
+				1DB34BF629B510F9006B6CC5 /* TextToSpeechViewModel.swift in Sources */,
+				1D63565129F973E100DFDD65 /* CredentialManager.swift in Sources */,
+				1DB35E0529B4C9D000ADEB75 /* TextCompletionViewModel.swift in Sources */,
+				1DB35DDB29B4C9C000ADEB75 /* SpeakEasyApp.swift in Sources */,
+				1DB35E0A29B4E84D00ADEB75 /* SpeechRecognizerViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DB35DE329B4C9C200ADEB75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DB35DEC29B4C9C200ADEB75 /* SpeakEasyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DB35DED29B4C9C200ADEB75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DB35DF629B4C9C200ADEB75 /* SpeakEasyUITests.swift in Sources */,
+				1DB35DF829B4C9C200ADEB75 /* SpeakEasyUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1DB35DE929B4C9C200ADEB75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DB35DD629B4C9C000ADEB75 /* SpeakEasy */;
+			targetProxy = 1DB35DE829B4C9C200ADEB75 /* PBXContainerItemProxy */;
+		};
+		1DB35DF329B4C9C200ADEB75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DB35DD629B4C9C000ADEB75 /* SpeakEasy */;
+			targetProxy = 1DB35DF229B4C9C200ADEB75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DB35DF929B4C9C200ADEB75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1DB35DFA29B4C9C200ADEB75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1DB35DFC29B4C9C200ADEB75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB788DD63AFAAF9939FF581C /* Pods-SpeakEasy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpeakEasy/Preview Content\"";
+				DEVELOPMENT_TEAM = VPN42CNA7H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses microphone for recognize your voice";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app uses speech recognition for reading a message";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.rinov.SpeakEasy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1DB35DFD29B4C9C200ADEB75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51CB370DB33FA54CE9EB8E67 /* Pods-SpeakEasy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpeakEasy/Preview Content\"";
+				DEVELOPMENT_TEAM = VPN42CNA7H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses microphone for recognize your voice";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app uses speech recognition for reading a message";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.rinov.SpeakEasy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1DB35DFF29B4C9C200ADEB75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC23832A380D24A4BA40EDFC /* Pods-SpeakEasyTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V4CT2P98Z9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.rinov.SpeakEasyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpeakEasy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpeakEasy";
+			};
+			name = Debug;
+		};
+		1DB35E0029B4C9C200ADEB75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16214EE7D68D87FD14EB20AF /* Pods-SpeakEasyTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V4CT2P98Z9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.rinov.SpeakEasyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpeakEasy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpeakEasy";
+			};
+			name = Release;
+		};
+		1DB35E0229B4C9C200ADEB75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A9C7BD5CEAF7414C10F59BA /* Pods-SpeakEasy-SpeakEasyUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V4CT2P98Z9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.rinov.SpeakEasyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpeakEasy;
+			};
+			name = Debug;
+		};
+		1DB35E0329B4C9C200ADEB75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FF3D7D9DBDC3D390DEAE3B1 /* Pods-SpeakEasy-SpeakEasyUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V4CT2P98Z9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.rinov.SpeakEasyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpeakEasy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DB35DD229B4C9C000ADEB75 /* Build configuration list for PBXProject "SpeakEasy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DB35DF929B4C9C200ADEB75 /* Debug */,
+				1DB35DFA29B4C9C200ADEB75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DB35DFB29B4C9C200ADEB75 /* Build configuration list for PBXNativeTarget "SpeakEasy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DB35DFC29B4C9C200ADEB75 /* Debug */,
+				1DB35DFD29B4C9C200ADEB75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DB35DFE29B4C9C200ADEB75 /* Build configuration list for PBXNativeTarget "SpeakEasyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DB35DFF29B4C9C200ADEB75 /* Debug */,
+				1DB35E0029B4C9C200ADEB75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DB35E0129B4C9C200ADEB75 /* Build configuration list for PBXNativeTarget "SpeakEasyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DB35E0229B4C9C200ADEB75 /* Debug */,
+				1DB35E0329B4C9C200ADEB75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1DB35DCF29B4C9C000ADEB75 /* Project object */;
+}
