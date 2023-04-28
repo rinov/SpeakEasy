@@ -20,7 +20,7 @@
 
 # APIキーのセットアップ
 
-本プロジェクトでは `credential.plist`から秘匿情報を取得します。このファイル名は.gitignorに登録されているためcommitされないようになっています。
+本プロジェクトでは `credential.plist`から秘匿情報を取得します。このファイル名は.gitignoreに登録されているためcommitされないようになっています。
 ファイルの作成方法はプロジェクトルートでXCode上から新規ファイル追加でPropertyListを選択し、以下のキー名で登録を行なってください。
 
 OpenAI API Key: `OPENAI_API_KEY`
